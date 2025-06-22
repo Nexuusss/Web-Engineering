@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Delight</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav
+      style="display: flex; place-items: center; justify-content: space-between"
+    >
+      <h1 style="color: white; font-weight: 100"><i>☕Café Delight</i></h1>
+      <!-- <a href="" style="color: aliceblue">Account</a> -->
+      <div class="dropdown"></div>
+      <ul class="nav-list">
+        <li class="dropdown">
+          <a href="#">Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="#">Items <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Milk Shakes</a></li>
+            <li><a href="#">Coffe</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Offers <i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-content">
+            <li><a href="#">Meal for two</a></li>
+            <li><a href="#">Family Pack</a></li>
+            <li><a href="#">Iftar Items</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <input type="text" placeholder="Type your item" />
+        <button type="submit" style="color: black; background-color: yellow">
+          Search
+        </button>
+      </div>
+      <i style="color: aliceblue" class="fa-solid fa-cart-shopping"
+        ><sub>0</sub></i
+      >
+    </nav>
+
+    <section
+      class="hero"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+        background: #fff;
+        gap: 10px;
+        padding: 10px 0;
+        flex-wrap: wrap;
+      "
+    >
+      <div
+        style="
+          flex: 300px;
+          display: flex;
+          justify-content: center;
+          padding: 0 20px;
+        "
+      >
+        <img
+          src="https://i.pinimg.com/736x/9a/1a/f1/9a1af10f967c38a94f3b2756a7e92faf.jpg"
+          alt="Cafe"
+          style="
+            width: 60%;
+            max-width: 400px;
+            border-radius: 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+          "
+        />
+      </div>
+
+      <div
+        style="
+          flex: 1 1 400px;
+          color: #222;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 10px;
+        "
+      >
+        <h1
+          style="
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            font-family: 'Segoe UI', sans-serif;
+          "
+        >
+          Welcome to <i>Café Delight</i>
+        </h1>
+        <p style="font-size: 1.2rem; margin-bottom: 24px">
+          Your one-stop destination for delicious food and drinks. Enjoy fresh
+          fruits, milk shakes, coffee, and more!
+        </p>
+        <div
+          style="
+            background: linear-gradient(90deg, #b3b03a 0%, #ffcc33 100%);
+            color: #222;
+            padding: 18px 32px;
+            border-radius: 18px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 24px rgba(255, 204, 51, 0.15);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+          "
+        >
+          <i class="fa fa-gift" style="margin-right: 10px"></i>
+          Special Offer: 15% OFF on Strawberries this week!
+        </div>
+        <a
+          href="#"
+          style="
+            background: rgb(255, 38, 0);
+            color: white;
+            padding: 12px 32px;
+            border-radius: 24px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-top: 8px;
+            transition: background 0.2s ease;
+          "
+        >
+          <b>Order Now !</b>
+        </a>
+      </div>
+    </section>
+
+    <section class="sec" style="margin-top: 50px">
+      <div class="grid1">
+      <div class="card">
+      <img
+      src="https://images.unsplash.com/photo-1603833665858-e61d17a86224?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="banana"
+      />
+      <h2>Banana</h2>
+      <p>
+      <span class="original-price" id="banana-original">$24.99</span>
+      <span class="discounted-price" id="banana-price"></span>
+      <span class="discount-label" id="banana-discount"></span>
+      </p>
+      </div>
+      <div class="card">
+      <img
+      src="https://images.unsplash.com/photo-1518635017498-87f514b751ba?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Strawberry"
+      />
+      <h2>Strawberry</h2>
+      <p>
+      <span class="original-price" id="strawberry-original">$29.99</span>
+      <span class="discounted-price" id="strawberry-price"></span>
+      <span class="discount-label" id="strawberry-discount"></span>
+      </p>
+      </div>
+      <div class="card">
+      <img
+      src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Apple"
+      />
+      <h2>Apple</h2>
+      <p>
+      <span class="original-price" id="apple-original">$19.99</span>
+      <span class="discounted-price" id="apple-price"></span>
+      <span class="discount-label" id="apple-discount"></span>
+      </p>
+      </div>
+      <div class="card">
+      <img
+      src="https://images.unsplash.com/photo-1464983953574-0892a716854b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Watermelon"
+      />
+      <h2>Watermelon</h2>
+      <p>
+      <span class="original-price" id="watermelon-original">$34.99</span>
+      <span class="discounted-price" id="watermelon-price"></span>
+      <span class="discount-label" id="watermelon-discount"></span>
+      </p>
+      </div>
+      </div>
+    </section>
+    
+      
+    
+    <div style="text-align: center; margin-top: 20px">
+      <button class="order-btn">Order Now</button>
+    </div>
+    <footer>
+      <p>Thank you for Shopping</p>
+    </footer>
+    <script src="./grocery.js"></script>
+  </body>
+</html>
